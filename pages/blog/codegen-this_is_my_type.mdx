@@ -1,0 +1,89 @@
+import withArticle from '../../ui/blog/article'
+export const meta = {
+  title: 'GraphQL Code Generator with TypeScript - Create Discriminated Union',
+  author: 'tuvalSimha',
+  tags: ['graphql', 'typescript', 'codegen'],
+  date: '2022-06-08',
+  description: 'GraphQL Code Generator generate TypeScript Discriminated Union Types',
+  image: '/blog-assets/graphql-code-generator/cover.png'
+}
+export default withArticle(meta)
+ 
+# Introduction
+
+In the last few months I just started learn how to code, I already know how to partly work with JavaScript and start to learn TypeScript. When I was create TypeScript types I found a lot of tutorials and documentation that help me create Types and how to implement them in my code. For example: **Discriminated Union.**
+If you ask yourself "Hey, what is discriminated union?", let's talk about it!
+
+So a discriminated union is a kind of pattern, that tells the compiler all possible types that can be used in a variable.
+If you want to create discriminated union, all types must have at least one unique value that can be used to identify the type.
+In addition, you must have the same literal values for all types (For example: string, number and boolean).
+
+## Lets split it to 3 simple parts:
+
+1. Discriminant - Where I create the Types.
+2. Union - Take the types I want and create a union type for them.
+3. How to use (Type Guards) - Use my new types in my code.
+
+### 1. Discriminant
+
+```ts
+type Sushi = {
+  kind: 'Sushi'
+  fish: string
+  amount: number
+}
+
+type Pizza = {
+  kind: 'Pizza'
+  topping: string
+  amount: number
+}
+
+type Pasta = {
+  kind: 'Pasta'
+  sauce: string
+  amount: number
+}
+```
+
+### 2. Union
+
+```ts
+type Food = Sushi | Pizza | Pasta
+```
+
+### 3. Type Guards
+
+```ts
+function (param: Food) {
+  switch (param.kind) {
+    case "Pizza":
+      // type any condition you want
+      break;
+    case "Sushi":
+      // type any condition you want
+      break;
+    case "Pasta":
+      // type any condition you want
+      break;
+  }
+}
+```
+
+## GraphQL Codegen plugin - Types Safety:
+
+- This why of work with Types is great, but very dangerous.
+  Imagine you should create a project with a lot of different Types, there is a chance you probably will make mistakes with the Types in code-time.
+
+- You need to manage the Types according to the database, the server protocol and inside the Types file.
+
+## Summary:
+
+So after I learned about TypeScript types (And did a lot of mistakes in code-time), just figured out that GraphQL Codegen makes my work easier, faster, and more accurate.
+
+Codegen helps you create TypeScript Types based on your GraphQL schema. This way of working can help you reduces the chances to write Types mistakes, and probably find the bugs at build-time and not running-time.
+
+## So how do we create Types based GraphQL schema?
+
+[GraphQL Code-Generator - LINK](https://graphql-code-generator.com/)
+You are more then welcome to enter to the docs and try it by yourself, the Introduction, Installation and development workflow is super easy and clear!
