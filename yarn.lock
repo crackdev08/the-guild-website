@@ -8636,10 +8636,10 @@ rc@^1.2.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-avatar@4.1.0:
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/react-avatar/-/react-avatar-4.1.0.tgz#f3c38ee1f4f5ef15e3df9fbf0429feeaef349065"
-  integrity sha512-hmf+q8zNbhEhjDwBQgD8EkY86qyvdw9/Vyhs2oyq6Z86wFQ1B2uLv/SrhSGubKqxd+AQNvEDmMefqWZf9dca0A==
+react-avatar@5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/react-avatar/-/react-avatar-5.0.1.tgz#66a6c6d1e8a790dfccd7b5ca03f41c193370eb3a"
+  integrity sha512-IE9v9WMcsLb9Zq5NYtZwsHvZX7HKsy87N4hro9/NYSStilPnq3fohPF/N3e3S3KuRAipzV1LNqjKT0Jvb8SMaA==
   dependencies:
     is-retina "^1.0.3"
     md5 "^2.0.0"
@@ -9191,12 +9191,12 @@ sade@^1.7.3:
   dependencies:
     mri "^1.1.0"
 
-safe-buffer@5.2.1, safe-buffer@^5.0.1:
+safe-buffer@5.2.1:
   version "5.2.1"
   resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.2.1.tgz#1eaf9fa9bdb1fdd4ec75f58f9cdb4e6b7827eec6"
   integrity sha512-rp3So07KcdmmKbGvgaNxQSJr7bGVSVk5S9Eq1F+ppbRo70+YeaDxkw5Dd8NPN+GD6bjnYm2VuPuCXmpuYvmCXQ==
 
-safe-buffer@~5.1.0, safe-buffer@~5.1.1:
+safe-buffer@^5.0.1, safe-buffer@~5.1.0, safe-buffer@~5.1.1:
   version "5.1.2"
   resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.1.2.tgz#991ec69d296e0313747d59bdfd2b745c35f8828d"
   integrity sha512-Gd2UZBJDkXlY7GbJxfsE8/nvKkUEU1G38c1siN6QP6a9PT9MmHB8GnpscSmMJSoF8LOIrt8ud/wPtojys4G6+g==
