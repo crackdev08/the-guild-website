@@ -21,8 +21,8 @@
   "dependencies": {
     "@agentofuser/remark-oembed": "1.0.4",
     "@bugsnag/js": "7.17.0",
-    "@chakra-ui/icons": "1.1.7",
-    "@chakra-ui/react": "1.8.8",
+    "@chakra-ui/icons": "2.0.2",
+    "@chakra-ui/react": "2.2.1",
     "@guild-docs/client": "2.1.1",
     "@mdx-js/loader": "2.1.2",
     "@mdx-js/react": "2.1.2",
